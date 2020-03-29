@@ -1,2 +1,3 @@
 # wallet
- Wallet Client Miascoin
+ Aguard Wallet Client
+ Asset for Staking, Mining, and Masternodes
