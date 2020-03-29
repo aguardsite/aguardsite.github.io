@@ -1,0 +1,19 @@
+<svg width="3215" height="3975" xmlns="http://www.w3.org/2000/svg" stroke="null" style="vector-effect: non-scaling-stroke;">
+ <defs stroke="null" style="vector-effect: non-scaling-stroke;">
+  <style stroke="null" style="vector-effect: non-scaling-stroke;" type="text/css">
+   <![CDATA[
+    .fil0 {fill:whitesmoke}
+   ]]>
+  </style>
+ </defs>
+ <g stroke="null">
+  <title stroke="null">background</title>
+  <rect stroke="null" x="-1" y="-1" width="3216.888805" height="3976.862519" id="canvas_background" fill="none"/>
+ </g>
+ <g stroke="null">
+  <title stroke="null">Layer 1</title>
+  <text stroke="#000" transform="translate(-851.8739624023438,-3423.025390625) scale(0.9027634859085083,1) translate(851.8739624023438,3423.025390625) translate(-159.81207275390625,-29.934194564819336) scale(1) translate(159.81207275390625,29.934194564819336) translate(-163.3282928466797,-31.153926849365234) scale(1.1874874830245972,1.0650370121002197) translate(163.3282928466797,31.153926849365234) translate(-163.3282928466797,-33.31791687011719) scale(1) translate(163.3282928466797,33.31791687011719) translate(-163.3282928466797,-33.31791687011719) scale(1) translate(163.3282928466797,33.31791687011719) translate(-156.5703125,-33.31791687011719) scale(0.6396594643592834,1) translate(156.5703125,33.31791687011719) translate(-178.3336181640625,3878.577880859375) scale(1,1.0452910661697388) translate(178.3336181640625,-3878.577880859375) translate(-178.3336181640625,290.63800048828125) scale(1) translate(178.3336181640625,-290.63800048828125) translate(-178.3336181640625,287.20782470703125) scale(1,1.1829415559768677) translate(178.3336181640625,-287.20782470703125) translate(-181.08384704589844,288.2104797363281) scale(1) translate(181.08384704589844,-288.2104797363281) translate(-178.3336181640625,3326.072998046875) scale(1) translate(178.3336181640625,-3326.072998046875) translate(-178.3336181640625,3328.501220703125) scale(1,1.0361493825912476) translate(178.3336181640625,-3328.501220703125) matrix(199.01778938939165,0,0,108.0966611470778,-17197.372023238677,-197221.37872124754) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="54" id="svg_1" y="1855.019" x="82.722684" stroke-opacity="null" stroke-width="0" fill="#e5e5e5">c</text>
+  <ellipse id="svg_3" cy="1394.078927" cx="1279.297521" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#e5e5e5"/>
+  <ellipse id="svg_4" cy="1437.839257" cx="672.904368" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#e5e5e5"/>
+ </g>
+</svg>
