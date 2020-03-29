@@ -32,7 +32,7 @@
 <div ng-controller="splashController as splash" id="bg-spin" class="noSelect" ng-show="home.screen === 'splash-screen'">
   <div id="logo-container-centered" class="centerIt">
     <div id="logoo">
-      <img id="logo-spin" src="img/xem-logos.png" />
+      <img id="logo-spin" src="img/xem-logo2.png" />
       <p id="networkCheck">Loading...</p>
 	  
     </div>
@@ -46,7 +46,7 @@
     <thead>
     <div id="logoNversion">
       <img src="img/xem-logo2.png" />
-      <p ng-class='{testnet: isTestnet()}'>{{::home.title}} <span class="wlcversion">{{::home.version}}</span></p>
+     <p ng-class="{testnet: isTestnet()}" class="ng-binding">Aguard Wallet <span class="wlcversion ng-binding">V1.0</span></p>
     </div>
     </thead>
 
