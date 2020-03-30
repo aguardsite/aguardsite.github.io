@@ -34,7 +34,7 @@
         <div id="logoo">
             <img id="logo-spin" src="img/xem-logo2.png"/>
             <p id="networkCheck">Keepint in Safe...</p>
-          <br/><a href="aguard.site@gmail.com" style="color:white" target="_blank">Aguard</a>
+          
         </div>
     </div>
 </div>
@@ -333,7 +333,7 @@
             </span>
 
         <div class="noDisp">
-            <div id="address-qr-modal" waves-dialog global="true" no-support-link="false" cancel-button-visible="false"
+            <div id="address-qr-modal" waves-dialog global="true" cancel-button-visible="false"
                  ok-button-caption="CLOSE">
                 <waves-qr-code size="300" value="::menu.addressQr"></waves-qr-code>
             </div>
@@ -436,15 +436,15 @@
         <!-- APPLICATION TAB SELECTORS -->
         <section id="tabs" class="fFade noSelect">
             <div id="tabs-Iconset" class="centerIt">
-        <span waves-tab
-              on-select="nav.changeTab(pageId)"
-              current-page-id="nav.currentTab"
-              page-id="wallet"
-              caption="'Wallet tab'"
-              tooltipster
-              tooltip-html
-              tooltip-theme="tooltipster-theme3"
-              tooltip-title="<center><u>Wallet</u></center><br/>Area containing the main wallets."></span>
+                <span waves-tab
+                      on-select="nav.changeTab(pageId)"
+                      current-page-id="nav.currentTab"
+                      page-id="wallet"
+                      caption="'Wallet tab'"
+                      tooltipster
+                      tooltip-html
+                      tooltip-theme="tooltipster-theme3"
+                      tooltip-title="<center><u>Wallet</u></center><br/>Area containing the main wallets."></span>
                 <span waves-tab
                       on-select="nav.changeTab(pageId)"
                       current-page-id="nav.currentTab"
@@ -1033,7 +1033,7 @@
                 <td>{{tx.reissuable}}</td>
                 <td>{{tx.balance | moneyShort}}</td>
                 <td>
-                  <button class="wButton wButton-neg fade" ng-click="assetList.assetTransfer(tx.id)">TRANSFER</button><span class="divider-2"></span>
+                  <button class="wButton wButton-neg fade" ng-click="assetList.assetTransfer(tx.id)">SEND</button><span class="divider-2"></span>
                   <button class="wButton wButton-neg fade" ng-disabled="!tx.formatted.canReissue" ng-click="assetList.assetReissue(tx.id)">REISSUE</button><span class="divider-2"></span>
                   <button class="wButton wButton-neg fade" ng-click="assetList.assetDetails(tx.id)">DETAILS</button><span class="divider-2"></span>
                   <button class="wButton wButton-neg fade" ng-click="assetList.assetMassPay(tx.id)">MASS PAY</button><span class="divider-2"></span>
@@ -1229,6 +1229,9 @@
                       <tr>
                         <td>Payments file</td>
                         <td>
+                          <div class="form-field">
+                          <input class="wInput form-control" name="assetRecipient" type="text" placeholder="Recipient" ng-model="transfer.recipient" />
+                        </div>
                           <input type="file" name="inputFile" ng-model="mass.filename" file-select file-handler="mass.handleFile(file)" accept=".json,.csv,.txt"/>
                         </td>
                       </tr>
