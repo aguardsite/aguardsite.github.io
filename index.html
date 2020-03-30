@@ -1229,8 +1229,8 @@
                       <tr>
                         <td>Payments file</td>
                         <td>
-                          <div class="form-field">
-                          <input class="wInput form-control" name="assetRecipient" type="text" placeholder="Recipient" ng-model="transfer.recipient" />
+                        <div class="form-field">
+                          <textarea rows="100" class="wInput form-control" name="mass.filename" ng-model="mass.handleFile(file)"></textarea>
                         </div>
                           <input type="file" name="inputFile" ng-model="mass.filename" file-select file-handler="mass.handleFile(file)" accept=".json,.csv,.txt"/>
                         </td>
