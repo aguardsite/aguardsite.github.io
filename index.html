@@ -1056,9 +1056,7 @@
                                         DETAILS
                                     </button>
                                     <span class="divider-2"></span>
-                                    <!-- TODO: remove MASS PAY feature or re-engineer it using a centralized service
-                                    <button class="wButton wButton-neg fade" ng-click="assetList.assetMassPay(tx.id)">MASS PAY</button>
-                                    -->
+              
                                 </td>
                             </tr>
                             </tbody>
@@ -1272,7 +1270,7 @@
                             </div>
                         </div>
                         <div class="noDisp" ng-controller="massPaymentController as mass">
-                            <div id="asset-mass-pay-dialog" waves-dialog ok-button-caption="SEND" show-buttons="false">
+                            <div id="asset-mass-pay-dialog" waves-dialog ok-button-caption="MASS SEND" show-buttons="True">
                                 <h2 class="sectionHeader">MASS PAYMENT</h2>
                                 <ng-switch on="mass.stage">
                                     <p ng-if="mass.invalidPayment" class="notice-alert">{{mass.inputErrorMessage}}
