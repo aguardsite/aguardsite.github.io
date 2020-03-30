@@ -333,7 +333,7 @@
             </span>
 
         <div class="noDisp">
-            <div id="address-qr-modal" waves-dialog global="true" no-support-link="true" cancel-button-visible="false"
+            <div id="address-qr-modal" waves-dialog global="true" no-support-link="false" cancel-button-visible="false"
                  ok-button-caption="CLOSE">
                 <waves-qr-code size="300" value="::menu.addressQr"></waves-qr-code>
             </div>
@@ -369,7 +369,7 @@
                     <input id="privateKeyBackup" class="wInput" type="text" readonly ng-model="menu.privateKey"/><br/>
                     <label for="publicKeyBackup">PUBLIC KEY</label><br/>
                     <input id="publicKeyBackup" class="wInput" type="text" readonly ng-model="menu.publicKey"/><br/>
-                    <label for="addressBackup">ADDRESS</label><br/>
+                    <label for="addressBackup">AGRD ADDRESS</label><br/>
                     <input id="addressBackup" class="wInput" type="text" readonly ng-model="menu.address"/>
                 </form>
             </div>
@@ -429,7 +429,6 @@
                      src="img/uiTB-iconset-logout.svg" alt="Log out" title="Log out"/>
             </a>
         </div>
-        <waves-support-link class="in-header light"></waves-support-link>
     </header>
     <!--   / HEADER-->
 
