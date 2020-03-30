@@ -55,25 +55,23 @@
             <td>
                 <!-- Accounts -->
                 <div id="accounts">
-                    <div ng-hide="accounts.mode === 'backup-seed'">
-                        <h1>Backup accounts</h1>
-                        <div class="accountsDescription">Please log in to view your Seed phrase</div>
-                        <h2 id="AccHeader">{{accounts.caption}}</h2>
-                    </div>
-                    <div class="wavesAccounts" ng-controller="accountListController as list"
-                         ng-show="accounts.mode === 'list'">
-                        <p class="loginAccountDiv" ng-repeat="account in list.accounts track by $index">
-                            <span class="loginAccount fade" tooltipster tooltip-theme="tooltipster-theme1"
-                                  title="Log into this account." ng-click="list.signIn(account)">
-                                <b>{{::account.name}}</b> <span
-                                    class="divider-1"></span> <small>{{::account.address}}</small>
-                            </span>
-                            <span class="clipSpan" tooltipster tooltip-theme="tooltipster-theme1" ngclipboard
-                                  title="Copy this address to the clipboard."
-                                  data-clipboard-text="{{::account.address}}"
-                                  ngclipboard-success="clipboardOk()"></span>
-                        </p>
-                        <br/>
+          <h2 id="AccHeader">{{accounts.caption}}</h2>
+          <div class="wavesAccounts" ng-controller="accountListController as list" ng-show="accounts.mode === 'list'">
+            <p class="loginAccountDiv" ng-repeat="account in list.accounts track by $index">
+                                    <span class="loginAccount fade" tooltipster tooltip-theme="tooltipster-theme1" title="Log into this account." ng-click="list.signIn(account)"> <br/>
+                                        <b>{{::account.name}}</b> <span class="divider-1"></span> <small>{{::account.address}}</small>
+                                    </span>
+              <span class="clipSpan" tooltipster tooltip-theme="tooltipster-theme1" ngclipboard title="Copy this address to the clipboard." data-clipboard-text="{{::account.address}}" ngclipboard-success="clipboardOk()"></span>
+              <span class="divider-1"></span>
+              <button class="removeAccount wButtonAlt fade" tooltipster tooltip-theme="tooltipster-theme1" title="Remove this account from the list." ng-click="list.showRemoveWarning($index)">
+                <span class="wButton-icon"><img src="img/wIcon_x.svg"></span>REMOVE
+              </button>
+            </p>
+
+            <button id="import_account" class="wButton fade" tooltipster tooltip-theme="tooltipster-theme1" title="Click here to import an existing account." ng-click="list.importAccount()">IMPORT ACCOUNT</button>
+            <span class="divider-1"></span>
+            <button id="create_account" class="wButton fade" tooltipster tooltip-theme="tooltipster-theme1" title="Click here to create a brand new account." ng-click="list.createAccount()">NEW ACCOUNT</button>
+            <br/>
 
                         <!-- Remove Account popup -->
                         <div id="account-remove-popup" waves-dialog on-dialog-ok="list.removeAccount()" is-error="true"
