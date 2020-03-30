@@ -775,6 +775,11 @@
                   <button class="wButton wButton-neg fade" ng-click="assetList.assetDetails(tx.id)">DETAILS</button><span class="divider-2"></span>
                   
 	<!-- MASS PAYMENT -->
+			<div id="mBB-history" class="mBB-content" ng-switch-when="history" ng-controller="historyController as history">
+          <waves-transaction-history heading="LATEST TRANSACTIONS"
+                                     transactions="history.transactions"
+                                     limit-to="50"></waves-transaction-history>
+        </div>
            <div class="noDisp" ng-controller="assetDetailsController as details">
               <div id="asset-details-dialog" waves-dialog cancel-button-visible="false">
                 <h2 class="sectionHeader">ASSET DETAILS</h2>
@@ -1031,13 +1036,7 @@
           </div>
         </div>
         <!-- / PORTFOLIO TAB -->
-
-        <!-- DEX TAB -->
-        <waves-page ng-switch-when="exchange" page-title="DEX">
-          <waves-dex></waves-dex>
-        </waves-page>
-        <!-- / DEX TAB -->
-		
+	
         <!-- HISTORY TAB -->
         <div id="mBB-history" class="mBB-content" ng-switch-when="history" ng-controller="historyController as history">
           <waves-transaction-history heading="LATEST TRANSACTIONS"
