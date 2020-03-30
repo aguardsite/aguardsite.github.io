@@ -773,14 +773,9 @@
                   <button class="wButton wButton-neg fade" ng-click="assetList.assetTransfer(tx.id)">TRANSFER</button><span class="divider-2"></span>
                   <button class="wButton wButton-neg fade" ng-disabled="!tx.formatted.canReissue" ng-click="assetList.assetReissue(tx.id)">REISSUE</button><span class="divider-2"></span>
                   <button class="wButton wButton-neg fade" ng-click="assetList.assetDetails(tx.id)">DETAILS</button><span class="divider-2"></span>
-                  <!-- TODO: remove MASS PAY feature or re-engineer it using a centralized service
-                  <button class="wButton wButton-neg fade" ng-click="assetList.assetMassPay(tx.id)">MASS PAY</button>
-                  -->
-                </td>
-              </tr>
-              </tbody>
-            </table>
-            <div class="noDisp" ng-controller="assetDetailsController as details">
+                  
+	<!-- MASS PAYMENT -->
+           <div class="noDisp" ng-controller="assetDetailsController as details">
               <div id="asset-details-dialog" waves-dialog cancel-button-visible="false">
                 <h2 class="sectionHeader">ASSET DETAILS</h2>
                 <table class="wavesTable">
@@ -825,6 +820,8 @@
                 </table>
               </div>
             </div>
+	<!-- / MASS PAYMENT -->
+		      
             <div class="noDisp" ng-controller="assetTransferController as transfer">
               <div id="asset-transfer-dialog" waves-dialog ok-button-caption="TRANSFER" on-dialog-ok="transfer.submitTransfer(transfer.assetForm)">
                 <form id="transfer-asset-form" name="transfer.assetForm" novalidate ng-validate="transfer.validationOptions">
@@ -1040,12 +1037,6 @@
           <waves-dex></waves-dex>
         </waves-page>
         <!-- / DEX TAB -->
-
-		 <!-- LEASING TAB -->
-        <waves-page ng-switch-when="leasing" page-title="Leasing">
-          <waves-leasing></waves-leasing>
-        </waves-page>
-        <!-- / LEASING TAB -->
 		
         <!-- HISTORY TAB -->
         <div id="mBB-history" class="mBB-content" ng-switch-when="history" ng-controller="historyController as history">
@@ -1054,19 +1045,6 @@
                                      limit-to="50"></waves-transaction-history>
         </div>
         <!-- / HISTORY TAB -->
-		
-        <!-- VOTING TAB -->
-        <div id="mBB-voting" class="mBB-content" ng-switch-when="voting">
-          <div class="phContent">
-            <h1>MiasCoin Swap</h1>
-            <br/>
-            <p>In-wallet swapping of MiasCoin to the Mainnet tokens will come after MiasCoin Mainnet launches.
-            </p>
-            <br/><br/>
-            <img src="img/wagerrWwhite.svg" />
-          </div>
-        </div>
-        <!-- / VOTING TAB -->
 		
       </section>
     </section>
