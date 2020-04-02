@@ -1423,5 +1423,18 @@
 
 
 </body>
+<script>
+let assetId = "GhzX2eJYJg9XJEBmCjwHTyGL9B5jsZ55i6QS93Rt2Ec"
+let target = ".lastPrice"
+let tokenDecimal = 6 // your token decimal
+let lastPrice = fetch("https://matcher.waves.exchange/matcher/orderbook/"+assetId+"/WAVES/status")
+.then(res => res.json())
+.then(asset => { 
+    document.querySelectorAll(target).forEach(res => {
+      res.textContent = asset.lastPrice / 10 ** tokenDecimal
+    })
+})
+.catch(function (err) { console.log(err) })
+</script>
 </html>
 
